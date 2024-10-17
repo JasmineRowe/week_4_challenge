@@ -19,7 +19,7 @@
             </div>
         </header>
 
-        <!-- Sidebar -->
+        <!-- Sidebar 
         <aside class="sidebar">
             <nav>
                 <ul>
@@ -30,39 +30,70 @@
                     <li><a href="#">Logout</a></li>
                 </ul>
             </nav>
-        </aside>
+        </aside>-->
 
         <!-- Main Content -->
         <main class="main-content">
-            <h2>Task List</h2>
-            <table class="task-table">
-                <thead>
+          
+            <input type="text" id="addTask" placeholder="Add Task..." class="search-bar">
+      
+            <button class="add-task-btn" id = "add-task-btn" >Submit Task</button>
+
+            <br><br>
+
+            <h2>Active Tasks</h2>
+
+            <table class="task-table" id="taskTable">
+          <thead>
                     <tr>
-                        <th>Status</th>
                         <th>Task</th>
-                        <th>Date Created</th>
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- Example rows -->
+                <tbody >      
                     <tr>
-                        <td>Incomplete</td>
-                        <td>Complete user dashboard</td>
-                        <td>2024-09-23</td>
-                        <td><button class="complete-btn">Mark as Complete</button></td>
+                        <td>Task Example</td>
+                        <td><button class="complete-btn" id="complete-btn">Mark as Complete</button></td>
                     </tr>
-                    <tr>
-                        <td>Incomplete</td>
-                        <td>Fix sidebar layout issues</td>
-                        <td>2024-09-22</td>
-                        <td><button class="complete-btn">Mark as Complete</button></td>
+                    <tr>             
+                        <td>Jasmine</td><td>Jasmine</td>
                     </tr>
-                    <!-- Repeat for 10+ tasks -->
+                          
                 </tbody>
             </table>
+
+<br><br>
+
+
+<h2>Completed Tasks</h2>
+            
+
+            <table class="task-table" id="taskTable">
+                   <thead>
+                           <tr>
+                               <th>Task</th>
+                               <th>Action</th>
+                           </tr>
+                       </thead>
+       
+       
+                       <tbody >
+                           <!-- Example rows -->
+                           <tr>
+                               <td>Task Example</td>
+                               <td>Date Completed</td>
+                           </tr>
+                         
+                           
+                           
+                       </tbody>
+                   </table>
+       
+
+
         </main>
     </div>
 </body>
+<script src="./Assets/script.js"></script>
 
 </html>
