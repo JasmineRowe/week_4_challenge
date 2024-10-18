@@ -10,32 +10,18 @@
 </head>
 
 <body>
-    <div class="dashboard-container">
-        <!-- Header -->
+   <div class="dashboard-container">
+      
         <header class="header">
-            <input type="text" placeholder="Search tasks..." class="search-bar">
-            <div class="user-avatar">
-                <img src="https://i.pravatar.cc/50?u=student" alt="User Avatar">
-            </div>
-        </header>
+            
+                    </header>
 
-        <!-- Sidebar 
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Tasks</a></li>
-                    <li><a href="#">Completed</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </nav>
-        </aside>-->
+       
 
         <!-- Main Content -->
         <main class="main-content">
           
-            <input type="text" id="addTask" placeholder="Add Task..." class="search-bar">
+            <input type="text" id="taskInput" placeholder="Add Task..." class="search-bar">
       
             <button class="add-task-btn" id = "add-task-btn" >Submit Task</button>
 
@@ -43,21 +29,15 @@
 
             <h2>Active Tasks</h2>
 
-            <table class="task-table" id="taskTable">
+            <table class="task-table" id="taskTable" >
           <thead>
                     <tr>
                         <th>Task</th>
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody >      
-                    <tr>
-                        <td>Task Example</td>
-                        <td><button class="complete-btn" id="complete-btn">Mark as Complete</button></td>
-                    </tr>
-                    <tr>             
-                        <td>Jasmine</td><td>Jasmine</td>
-                    </tr>
+                <tbody id="taskList" >      
+                    
                           
                 </tbody>
             </table>
@@ -77,11 +57,10 @@
                        </thead>
        
        
-                       <tbody >
+                       <tbody class = "task-table" id = "completedtasktable">
                            <!-- Example rows -->
                            <tr>
-                               <td>Task Example</td>
-                               <td>Date Completed</td>
+                            
                            </tr>
                          
                            
